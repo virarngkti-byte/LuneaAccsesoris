@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunea Accessories</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <style>
+      .nav-item > a {
+        font-size: 14px;
+      }
+
+      .nav-item > .nav-link:hover,
+      .active {
+        color: #2879a8 !important;
+        border-bottom: 2px solid #2879a8;
+      }
+
+      body {
+        background-color: #eaf6ff;
+        color: #2c1a1d;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      .font-display {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: #2879a8;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .bg-custom {
+        background-color: rgb(248, 249, 250, 0.5);
+      }
+
+      .text-content h1 {
+        font-size: 3rem;
+        line-height: 1.12;
+      }
+
+      @media (max-width: 768px) {
+        .text-content h1 {
+          font-size: 2rem;
+        }
+      }
+
+      .hero-section {
+        position: relative;
+        overflow: hidden;
+        padding: 4rem 0 5rem;
+      }
+
+      @keyframes floatMascot {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+          transform: translateY(-10px) rotate(1.5deg);
+        }
+      }
+
+      .animate-mascot {
+        animation: floatMascot 4.5s ease-in-out infinite;
+      }
+
+      .hero-image-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-pod {
+        position: absolute;
+        inset: 1rem;
+        background-color: #dff3ff;
+        border-radius: 44px;
+        box-shadow: 0 14px 28px -6px rgba(67, 150, 190, 0.15);
+        border: 4px solid #fff;
+        transform: rotate(2deg);
+      }
+
+      .btn-danger {
+        background-color: #6bb6e8;
+        border-color: #6bb6e8;
+      }
+
+      .btn-danger:hover {
+        background-color: #4fa3d8;
+        border-color: #4fa3d8;
+      }
+
+      .nav-item > .nav-link.active {
+        color: #6c757d !important;
+      }
+
+      /* TRUST BAR */
+      .trust-bar {
+        padding: 2rem 0;
+        background-color: #f4faff;
+        border-top: 1px solid #cce9f8;
+        border-bottom: 1px solid #cce9f8;
+      }
+
+      .trust-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #dff2ff;
+        color: #6cb6df;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      /* ==================== KATEGORI ==================== */
+     .kategori-card {
+       background: #fff;
+       border: 1px solid #cfe2f5;
+       border-radius: 24px;
+       padding: 1.5rem 1rem;
+       text-align: center;
+       transition: all 0.3s ease;
+       cursor: pointer;
+       height: 100%;
+     }
+
+    .kategori-card:hover {
+      box-shadow: 0 14px 28px -6px rgba(70, 140, 200, 0.20);
+      transform: translateY(-3px);
+    }
+
+    .kategori-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1rem;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      background-color: #dceeff;
+      color: #5b9bd5;
+      transition: transform 0.3s ease;
+    }
+
+  .kategori-card:hover .kategori-icon {
+    transform: scale(1.1);
+  }
+
+ .kategori-icon.brown {
+    background-color: #edf5fc;
+    color: #5b9bd5;
+ }
+
+ .kategori-icon.cream {
+    background-color: #f8eee2;
+    color: #5b8db8;
+ }
+
+.kategori-icon.cherry {
+    background-color: #eaf3f5;
+    color: #6b9fc4;
+ } 
+
+.kategori-icon.gift {
+    background-color: #d6ebff;
+    color: #4a8bc2;
+ }
+
+ /* ================= BEST SELLER ================= */
+.bestseller-section {
+    padding: 4rem 0;
+    background-color: #F7FBFF;
+    border-top: 1px solid #DCEEFF;
+    border-bottom: 1px solid #DCEEFF;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DCEBFA;
+    border-radius: 30px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 14px 28px -6px rgba(91, 155, 213, 0.18);
+}
+
+.product-img-wrap {
+    position: relative;
+    height: 220px;
+    background-color: #F3F8FD;
+    border: 1px solid #E0EDF8;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img-wrap.choco {
+    background-color: #F8F4EF;
+}
+
+.product-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #5F8FBD;
+    border: 1px solid #DCEBFA;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.product-tag .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #7DB7E8;
+}
+
+.product-tag.green {
+    color: #5F8FBD;
+}
+
+.product-tag.green .dot {
+    background-color: #9CCBEF;
+}
+
+.product-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-icon {
+    transform: scale(1.05);
+}
+
+.product-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(184, 211, 235, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ==================== TENTANG ==================== */
+
+.tentang-section {
+  padding: 4rem 0;
+}
+
+.tentang-card {
+  background-color: #EAF6FF;
+  border: 1px solid #D5E9F7;
+  border-radius: 36px;
+  padding: 3rem 2rem;
+  box-shadow: 0 14px 28px -6px rgba(82, 127, 165, 0.12);
+}
+
+.mascot-bedge-circle {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+/* ==================== TESTIMONI ==================== */
+
+.testimoni-section {
+  padding: 4rem 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid #DCECF8;
+  border-bottom: 1px solid #DCECF8;
+}
+
+.testi-card {
+  background-color: #EAF6FF;
+  border: 1px solid #D5E9F7;
+  border-radius: 24px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  min-height: 220px;
+
+  box-shadow: 0 8px 20px rgba(82, 127, 165, 0.08);
+}
+
+
+.testi-card .stars {
+  color: #E7B84B;
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.testi-card p {
+  color: #6D8191;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+.testi-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: auto;
+}
+
+.testi-avatar {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+
+  background-color: #527FA5;
+  color: #FFFFFF;
+}
+
+.testi-user h5 {
+  margin: 0;
+
+  color: #527FA5;
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.testi-user span {
+  display: block;
+
+  color: #8DA0AF;
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+
+  margin-top: 2px;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+
+  .tentang-section {
+    padding: 3rem 1rem;
+  }
+
+  .tentang-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .testimoni-section {
+    padding: 3rem 1rem;
+  }
+
+  .testi-card {
+    min-height: 200px;
+  }
+
+}
+    </style>
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="GAMBAR/ac-removebg-preview.png" alt="Lunea" width="80" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produk</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Tentang</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Kontak</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a href="#" class="btn btn-light position-relative rounded-pill">
+                <i class="bi bi-cart3"></i>
+
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
+                >
+                  99+
+                  <span class="visually-hidden">Keranjang Kosong</span>
+                </span>
+              </a>
+              <a href="#" class="fw-bold btn btn-danger">Pesan Sekarang</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--MAIN CONTENT-->
+    <main id="main-content">
+      <!--HERO SECTION-->
+      <section class="hero-section" id="home">
+        <div class="container position-relative" style="z-index: 1">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-7 text-content"
+              text-content
+              text-center
+              text-lg-start
+            >
+              <h1 class="mb-3">Temukan Pesona Cantikmu Bersama Lunea</h1>
+              <p
+                class="text-secondary mb-4 mx-auto mx-lg-0"
+                style="max-width: 36rem"
+              >
+                Lengkapi gayamu dengan koleksi accessories cantik dan elegan
+                dari Lunea. Temukan berbagai pilihan yang manis, modern, dan
+                cocok untuk menemani setiap momen spesialmu.
+              </p>
+              <div
+                class="action d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="#"
+                  class="btn btn-danger fw-bold px-4 py-3 rounded-4 d-inline-flex align-items-center justify-content-center gap-2"
+                >
+                  Belanja Sekarang
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-light fw-bold px-4 py-3 rounded-4 border"
+                >
+                  Lihat Koleksi
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="hero-image-wrapper">
+                <div class="hero-pod"></div>
+                <img
+                  src="GAMBAR/acsesoris1-removebg-preview.png"
+                  alt="Maskot Lunea"
+                  class="img-fluid position-relative animate-mascot"
+                  style="z-index: 1; max-width: 380px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--TRUST BAR-->
+      <section class="trust-bar">
+        <div class="container">
+          <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="trust-icon">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <div class="text-start">
+                  <h4 class="h6 mb-0 fw-bold">Pesona Lunea</h4>
+                  <p class="small text-secondary mb-0">
+                    Aksesoris cantik dan elegan
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="trust-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <div class="text-start">
+                  <h4 class="h6 mb-0 fw-bold">Koleksi Cantik</h4>
+                  <p class="small text-secondary mb-0">
+                    Pilihan aksesoris untukmu
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="trust-icon">
+                  <i class="bi bi-magic"></i>
+                </div>
+                <div class="text-start">
+                  <h4 class="h6 mb-0 fw-bold">Sentuhan Istimewa</h4>
+                  <p class="small text-secondary mb-0">
+                    Detail manis untuk penampilanmu
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="trust-icon">
+                  <i class="bi bi-bag-heart"></i>
+                </div>
+                <div class="text-start">
+                  <h4 class="h6 mb-0 fw-bold">Lengkapi Gayamu</h4>
+                  <p class="small text-secondary mb-0">
+                    Temukan aksesoris favoritmu
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KATEGORI CONTENT -->
+<section id="kategori" class="py-5">
+  <div class="container text-center">
+      <span class="text-uppercase fw-bold text-uppercase small" style="color: #6B7F95;">
+          KOLEKSI LUNEA
+      </span>
+      <h2 class="mt-1">Pilih Accessories Favoritmu</h2>
+
+      <div class="row g-4">
+
+          <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                  <div class="kategori-icon">
+                      <img src="GAMBAR/icon/anting.svg" alt="" width="50" height="50">
+                  </div>
+                  <h3 class="h6 mb-1">Anting Cantik</h3>
+                  <p class="small text-secondary mb-0">
+                      Detail manis untuk melengkapi penampilanmu
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                  <div class="kategori-icon">
+                      <img src="GAMBAR/icon/kalung.svg" alt="" width="50" height="50">
+                  </div>
+                  <h3 class="h6 mb-1">Kalung Elegan</h3>
+                  <p class="small text-secondary mb-0">
+                      Kalung cantik untuk mempermanis gayamu
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                  <div class="kategori-icon">
+                      <img src="GAMBAR/icon/gelang.svg" alt="" width="50" height="50">
+                  </div>
+                  <h3 class="h6 mb-1">Gelang Cantik</h3>
+                  <p class="small text-secondary mb-0">
+                      Sentuhan manis untuk setiap kesempatan
+                  </p>
+              </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+              <div class="kategori-card">
+                  <div class="kategori-icon">
+                      <img src="GAMBAR/icon/cincin.svg" alt="" width="50" height="50">
+                  </div>
+                  <h3 class="h6 mb-1">Cincin Elegan</h3>
+                  <p class="small text-secondary mb-0">
+                      Cincin cantik untuk melengkapi gayamu
+                  </p>
+              </div>
+          </div>
+     </div>
+  </div>
+</section>
+
+<!-- BEST SELLER-->
+<section id="bestseller" class="bestseller-section py-5">
+  <div class="container">
+
+      <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between mb-5">
+          <div>
+              <span class="text-secondary fw-bold text-uppercase small" style="letter-spacing: .05em;">
+                  Koleksi Terpopuler
+              </span>
+              <h2 class="mt-1">Koleksi Favorit Lunea</h2>
+          </div>
+
+          <p class="text-secondary small mb-0 mt-2 mt-md-0" style="max-width: 24rem;">
+              Pilihan aksesoris cantik yang paling disukai untuk melengkapi penampilanmu.
+          </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1-->
+          <div class="col-md-6 col-lg-4">
+              <article class="product-card">
+                  <div class="product-img-wrap">
+                      <span class="product-tag">
+                          <span class="dot"></span>
+                          Populer
+                      </span>
+                      <img src="GAMBAR/icon/antingg.png" alt="Anting Elegan" class="img-fluid">
+                  </div>
+
+                  <div class="mt-3">
+                      <div class="d-flex align-items-center justify-content-between">
+                          <span class="small fw-semibold text-secondary text-uppercase" style="letter-spacing: .05em;">
+                              Anting
+                          </span>
+                          <span class="small fw-bold text-warning">
+                              <i class="bi bi-star-fill"></i> 4.8
+                          </span>
+                      </div>
+
+                      <h3 class="h5 mt-2 mb-1">Anting Luna Pearl</h3>
+
+                      <p class="small text-secondary mb-0">
+                          Anting manis dengan desain elegan untuk mempercantik penampilanmu.
+                      </p>
+                  </div>
+
+                  <div class="product-footer mt-3">
+                      <div>
+                          <span class="d-block small text-secondary">Harga</span>
+                          <span class="fw-bold fs-5">Rp 99.000</span>
+                      </div>
+
+                      <button class="btn btn-primary btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2">
+                          <i class="bi bi-bag-plus"></i>
+                          Beli
+                      </button>
+                  </div>
+              </article>
+          </div>
+
+          <!-- Card 2-->
+          <div class="col-md-6 col-lg-4">
+              <article class="product-card">
+                  <div class="product-img-wrap">
+                      <span class="product-tag">
+                          <span class="dot"></span>
+                          Favorit
+                      </span>
+                      <img src="GAMBAR/icon/kalungg.png" alt="Kalung Elegan" class="img-fluid">
+                  </div>
+
+                  <div class="mt-3">
+                      <div class="d-flex align-items-center justify-content-between">
+                          <span class="small fw-semibold text-secondary text-uppercase">
+                              Kalung
+                          </span>
+                          <span class="small fw-bold text-warning">
+                              <i class="bi bi-star-fill"></i> 4.9
+                          </span>
+                      </div>
+
+                      <h3 class="h5 mt-2 mb-1">Kalung Lunea Heart</h3>
+
+                      <p class="small text-secondary mb-0">
+                          Kalung cantik dengan sentuhan manis untuk melengkapi gaya sehari-hari.
+                      </p>
+                  </div>
+
+                  <div class="product-footer mt-3">
+                      <div>
+                          <span class="d-block small text-secondary">Harga</span>
+                          <span class="fw-bold fs-5">Rp 129.000</span>
+                      </div>
+
+                      <button class="btn btn-primary btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2">
+                          <i class="bi bi-bag-plus"></i>
+                          Beli
+                      </button>
+                  </div>
+              </article>
+          </div>
+
+          <!-- Card 3-->
+          <div class="col-md-6 col-lg-4">
+              <article class="product-card">
+                  <div class="product-img-wrap">
+                      <span class="product-tag">
+                          <span class="dot"></span>
+                          Terlaris
+                      </span>
+                      <img src="GAMBAR/icon/cincinn.png" alt="Cincin Elegan" class="img-fluid">
+                  </div>
+
+                  <div class="mt-3">
+                      <div class="d-flex align-items-center justify-content-between">
+                          <span class="small fw-semibold text-secondary text-uppercase">
+                              Cincin
+                          </span>
+                          <span class="small fw-bold text-warning">
+                              <i class="bi bi-star-fill"></i> 4.9
+                          </span>
+                      </div>
+
+                      <h3 class="h5 mt-2 mb-1">Cincin Lunea Shine</h3>
+
+                      <p class="small text-secondary mb-0">
+                          Cincin simpel dan elegan yang cocok untuk berbagai kesempatan.
+                      </p>
+                  </div>
+
+                  <div class="product-footer mt-3">
+                      <div>
+                          <span class="d-block small text-secondary">Harga</span>
+                          <span class="fw-bold fs-5">Rp 154.000</span>
+                      </div>
+
+                      <button class="btn btn-primary btn-sm fw-bold rounded-3 d-inline-flex align-items-center gap-2">
+                          <i class="bi bi-bag-plus"></i>
+                          Beli
+                      </button>
+                  </div>
+              </article>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<!--=====TENTANG=====-->
+<section id="tentang" class="tentang-section">
+  <div class="container">
+    <div class="tentang-card">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-5 text-center">
+          <div class="mascot-badge-circle">
+            <img src="GAMBAR/icon/hero-removebg-preview.png" alt="" class="img-fluid" />
+          </div>
+
+          <h3 class="h5 mt-4">Lunea Accessories</h3>
+
+          <p class="small text-secondary mb-0">
+            Temukan aksesori cantik untuk melengkapi setiap gaya dan momen spesialmu.
+          </p>
+        </div>
+
+        <div class="col-lg-7">
+          <span
+            class="fw-bold text-uppercase small"
+            style="letter-spacing: 0.05em; color: #8BB9D8;"
+          >
+            Tentang Lunea
+          </span>
+
+          <h2 class="mt-2" style="color: #527FA5;">
+            Mengenal Lunea Accessories
+          </h2>
+
+          <p class="text-secondary">
+            Lunea Accessories menghadirkan berbagai pilihan aksesori cantik
+            dan elegan seperti anting, kalung, gelang, dan cincin.
+            Setiap koleksi dipilih untuk membantu melengkapi penampilanmu
+            agar semakin manis dan percaya diri.
+          </p>
+
+          <div class="row g-3 pt-2">
+
+            <div class="col-sm-6">
+              <div
+                class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                style="border-color: #D6E8F5 !important"
+              >
+                <span
+                  class="d-inline-block rounded-circle"
+                  style="width: 8px; height: 8px; background-color: #6FA3D2;"
+                ></span>
+                Anting, Kalung & Gelang
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div
+                class="bg-white rounded-3 border p-3 small fw-semibold d-flex align-items-center gap-2"
+                style="border-color: #D6E8F5 !important"
+              >
+                <span
+                  class="d-inline-block rounded-circle"
+                  style="width: 8px; height: 8px; background-color: #8BB9D8;"
+                ></span>
+                Cincin Cantik & Elegan
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--=====TESTIMONI=====-->
+<section id="testimoni" class="testimoni-section">
+  <div class="container">
+
+    <div class="text-center mx-auto mb-5" style="max-width: 36rem;">
+      <span
+        class="fw-bold text-uppercase small"
+        style="letter-spacing: .05em; color:#8BB9D8;"
+      >
+        Komentar Mereka
+      </span>
+
+      <h2 class="mt-1">
+        Ulasan Pelanggan Lunea
+      </h2>
+    </div>
+
+    <div class="carousel slide" id="carouselExampleSlideOnly" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <!-- SLIDE  -->
+        <div class="carousel-item active" style="color: #5b9bd5 !important; border: none !important; ">
+          <div class="row g-4">
+
+            <!-- TESTIMONI 1 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Antingnya cantik banget dan modelnya elegan. Cocok dipakai
+                    untuk sehari-hari maupun acara spesial.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/aqeela-removebg-preview.png" alt="Aqeela" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Aqeela</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+      
+            <!-- TESTIMONI 2 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Kalungnya cantik dan terlihat mewah saat dipakai.
+                    Desainnya manis dan cocok dipadukan dengan berbagai outfit.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/cantika-removebg-preview.png" alt="Cantika" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Cantika</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+      
+            <!-- TESTIMONI 3 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Suka banget sama koleksi cincinnya. Modelnya simpel,
+                    elegan, dan bikin penampilan terlihat lebih menarik.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/sandrina-removebg-preview.png" alt="Sandrina" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Sandrina</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item" style="color: #5b9bd5 !important; border: none !important; ">
+          <div class="row g-4">
+
+            <!-- TESTIMONI 1 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Antingnya cantik banget dan modelnya elegan. Cocok dipakai
+                    untuk sehari-hari maupun acara spesial.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/ciara-removebg-preview.png" alt="Ciara" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Ciara</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+      
+            <!-- TESTIMONI 2 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Kalungnya cantik dan terlihat mewah saat dipakai.
+                    Desainnya manis dan cocok dipadukan dengan berbagai outfit.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/flavio-removebg-preview.png" alt="Flavio" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Flavio</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+      
+            <!-- TESTIMONI 3 -->
+            <div class="col-md-4">
+              <div class="testi-card">
+      
+                <div>
+                  <div class="text-warning mb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+      
+                  <p class="small mb-0">
+                    Suka banget sama koleksi cincinnya. Modelnya simpel,
+                    elegan, dan bikin penampilan terlihat lebih menarik.
+                  </p>
+                </div>
+      
+                <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                  <img src="GAMBAR/vania-removebg-preview.png" alt="Vania" class="testi-avatar">
+      
+                  <div>
+                    <h4 class="h6 mb-0">Vania</h4>
+                    <span class="small text-secondary">Jakarta</span>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    </main>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
